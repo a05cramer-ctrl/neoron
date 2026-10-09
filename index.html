@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEURON ($NRN) | The first memecoin that thinks</title>
+  <meta name="description" content="NEURON is the AI brain memecoin on Solana. Fair launched on pump.fun with zero tax and no team allocation. Join the swarm.">
+  <meta name="theme-color" content="#05060a">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="%SITE_URL%/">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Link previews on X, Telegram and Discord. Vercel swaps %SITE_URL% for
+       your live domain on every deploy (see build.mjs), so there's nothing to edit. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NEURON">
+  <meta property="og:url" content="%SITE_URL%/">
+  <meta property="og:title" content="NEURON ($NRN) | The first memecoin that thinks">
+  <meta property="og:description" content="The AI brain memecoin on Solana. Fair launched on pump.fun with zero tax and no team allocation.">
+  <meta property="og:image" content="%SITE_URL%/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NEURON ($NRN)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NEURON ($NRN) | The first memecoin that thinks">
+  <meta name="twitter:description" content="The AI brain memecoin on Solana. Fair launched on pump.fun with zero tax and no team allocation.">
+  <meta name="twitter:image" content="%SITE_URL%/assets/img/og.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="assets/img/logo.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="config.js"></script>
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace("no-js", "js");
+      try {
+        var c = window.NRN_CONFIG || {};
+        if (/[1-9A-HJ-NP-Za-km-z]{32,44}/.test(String(c.contractAddress || ""))) d.className += " is-live";
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5 15V6a2 2 0 0 1 2-2h9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4 10-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="NEURON home">
+        <img src="assets/img/logo.webp" alt="" width="32" height="32" class="brand__logo">
+        <span class="brand__name">NEURON</span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#how">How to buy</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--buy btn--sm" data-link-live="buy" data-link-pre="x" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="when-live">Buy $NRN</span><span class="when-pre">Follow on X</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden>
+      <a href="#about">About</a>
+      <a href="#how">How to buy</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="neural" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__badges rise" style="--d:.05s">
+          <span class="badge mono"><span class="dot" aria-hidden="true"><span class="dot__ring"></span><span class="dot__core"></span></span><span class="when-live">Live on pump.fun</span><span class="when-pre">Launching on pump.fun</span></span>
+          <span class="badge badge--ticker mono">$NRN</span>
+        </div>
+
+        <div class="hero__logo rise" style="--d:.12s">
+          <img src="assets/img/logo.webp" alt="NEURON logo" width="176" height="176" class="float ring" fetchpriority="high">
+        </div>
+
+        <h1 class="hero__title glow rise" style="--d:.18s">NEURON</h1>
+
+        <p class="hero__sub rise" style="--d:.26s">The first memecoin that actually thinks. Fair launched on pump.fun with zero tax, no team allocation, and a brain of its own.</p>
+
+        <div class="hero__ctas rise" style="--d:.34s">
+          <a class="btn btn--buy" data-link-live="buy" data-link-pre="x" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="when-live">Buy $NRN</span><span class="when-pre">Follow on X</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" data-link-live="chart" data-link-pre="telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer"><span class="when-live">View chart</span><span class="when-pre">Join Telegram</span></a>
+        </div>
+
+        <button class="hero__ca mono rise" style="--d:.42s" type="button" data-copy-ca>
+          <span class="hero__ca-k">CA</span>
+          <span data-ca-short></span>
+          <svg class="icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+          <svg class="icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+          <span class="sr-only">Copy contract address</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span class="ticker__item">$NRN</span>
+          <span class="ticker__item">The first memecoin that thinks</span>
+          <span class="ticker__item">Fair launch on pump.fun</span>
+          <span class="ticker__item">0% tax</span>
+          <span class="ticker__item">No presale</span>
+          <span class="ticker__item">Join the swarm</span>
+          <span class="ticker__item">$NRN</span>
+          <span class="ticker__item">The first memecoin that thinks</span>
+          <span class="ticker__item">Fair launch on pump.fun</span>
+          <span class="ticker__item">0% tax</span>
+          <span class="ticker__item">No presale</span>
+          <span class="ticker__item">Join the swarm</span>
+        </div>
+        <div class="ticker__group">
+          <span class="ticker__item">$NRN</span>
+          <span class="ticker__item">The first memecoin that thinks</span>
+          <span class="ticker__item">Fair launch on pump.fun</span>
+          <span class="ticker__item">0% tax</span>
+          <span class="ticker__item">No presale</span>
+          <span class="ticker__item">Join the swarm</span>
+          <span class="ticker__item">$NRN</span>
+          <span class="ticker__item">The first memecoin that thinks</span>
+          <span class="ticker__item">Fair launch on pump.fun</span>
+          <span class="ticker__item">0% tax</span>
+          <span class="ticker__item">No presale</span>
+          <span class="ticker__item">Join the swarm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ca">
+      <div class="container ca__inner">
+        <span class="ca__label mono">Contract address</span>
+        <button class="ca__btn mono" type="button" data-copy-ca>
+          <span class="ca__full" data-ca-full></span>
+          <span class="ca__short" data-ca-short></span>
+          <svg class="icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+          <svg class="icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+          <span class="sr-only">Copy contract address</span>
+        </button>
+        <p class="ca__pending mono">Drops at launch. Get it first on <a data-link="x" href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a> and <a data-link="telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>.</p>
+        <span class="sr-only" id="ca-status" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="reveal">
+          <span class="eyebrow">The thesis</span>
+          <h2 class="h2">A memecoin with a mind of its own</h2>
+          <p class="lead">Every cycle has its mascots. Dogs, frogs, hats. NEURON is what happens when the meme learns to think: a Solana community coin dressed as a living neural net, built for people who like their degeneracy with a little intelligence behind it.</p>
+          <p class="lead">No fake utility, no promises it can't keep. Just a fair launch, zero tax, and a community firing on every synapse.</p>
+          <ul class="chips">
+            <li class="chip">Solana</li>
+            <li class="chip">Fair launch</li>
+            <li class="chip">0% tax</li>
+            <li class="chip">No presale</li>
+            <li class="chip">Community owned</li>
+          </ul>
+        </div>
+        <figure class="about__media reveal">
+          <img src="assets/img/banner-1600.webp" srcset="assets/img/banner-960.webp 960w, assets/img/banner-1600.webp 1600w" sizes="(min-width: 1024px) 528px, calc(100vw - 40px)" alt="NEURON artwork: a glowing neural network shaped like a brain" width="1600" height="900" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Four steps</span>
+          <h2 class="h2">How to buy $NRN</h2>
+        </div>
+        <div class="steps-wrap">
+          <div class="steps__line" aria-hidden="true"></div>
+          <ol class="steps">
+            <li class="card reveal">
+              <span class="step__num mono" aria-hidden="true">01</span>
+              <h3>Get a wallet</h3>
+              <p>Download Phantom or any Solana wallet. Setup takes about a minute on web or mobile.</p>
+            </li>
+            <li class="card reveal" style="--delay:.06s">
+              <span class="step__num mono" aria-hidden="true">02</span>
+              <h3>Fund it with SOL</h3>
+              <p>Buy SOL on an exchange or right inside your wallet, then keep it ready to swap.</p>
+            </li>
+            <li class="card reveal" style="--delay:.12s">
+              <span class="step__num mono" aria-hidden="true">03</span>
+              <h3>Swap for $NRN</h3>
+              <p>Open $NRN on pump.fun using the contract address on this page and swap your SOL.</p>
+            </li>
+            <li class="card reveal" style="--delay:.18s">
+              <span class="step__num mono" aria-hidden="true">04</span>
+              <h3>Join the swarm</h3>
+              <p>Hold, meme, and connect with the other neurons on X and Telegram.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="after-cta reveal">
+          <a class="btn btn--buy" data-link-live="buy" data-link-pre="x" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="when-live">Buy $NRN</span><span class="when-pre">Follow on X</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tokenomics">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">The numbers</span>
+          <h2 class="h2">Tokenomics</h2>
+          <p class="lead">Simple by design. Fixed supply, no tax, nothing to read twice.</p>
+        </div>
+        <div class="stats">
+          <div class="card stat stat--hot reveal">
+            <div class="stat__k mono">Total supply</div>
+            <div class="stat__v glow">1B</div>
+            <div class="stat__sub">1,000,000,000 $NRN</div>
+          </div>
+          <div class="card stat reveal" style="--delay:.06s">
+            <div class="stat__k mono">Buy / sell tax</div>
+            <div class="stat__v glow">0 / 0</div>
+            <div class="stat__sub">No tax, ever</div>
+          </div>
+          <div class="card stat reveal" style="--delay:.12s">
+            <div class="stat__k mono">Liquidity</div>
+            <div class="stat__v glow">PumpSwap</div>
+            <div class="stat__sub">Moves there automatically at graduation</div>
+          </div>
+          <div class="card stat reveal" style="--delay:.18s">
+            <div class="stat__k mono">Team allocation</div>
+            <div class="stat__v glow">0%</div>
+            <div class="stat__sub">No presale, no reserved supply</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="roadmap">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">Synapse map</span>
+          <h2 class="h2">The roadmap</h2>
+        </div>
+        <ol class="timeline">
+          <li class="phase reveal">
+            <span class="phase__num mono" aria-hidden="true">01</span>
+            <div>
+              <h3>Spark</h3>
+              <p>Fair launch on pump.fun. The contract goes live and the network wakes up.</p>
+            </div>
+          </li>
+          <li class="phase reveal">
+            <span class="phase__num mono" aria-hidden="true">02</span>
+            <div>
+              <h3>Signal</h3>
+              <p>The community grows and the memes propagate. $NRN starts firing across every timeline.</p>
+            </div>
+          </li>
+          <li class="phase reveal">
+            <span class="phase__num mono" aria-hidden="true">03</span>
+            <div>
+              <h3>Swarm</h3>
+              <p>Graduation, trackers, and a thousand new neurons connecting at once.</p>
+            </div>
+          </li>
+          <li class="phase reveal">
+            <span class="phase__num mono" aria-hidden="true">04</span>
+            <div>
+              <h3>Singularity</h3>
+              <p>Full meme sentience. The network starts thinking for itself. (Mostly a joke. Mostly.)</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container container--faq">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Questions</span>
+          <h2 class="h2">Frequently asked</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal" name="faq" open>
+            <summary>What is NEURON?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">NEURON ($NRN) is a community memecoin on Solana built around an AI brain theme. It exists for fun, culture, and vibes.</p>
+          </details>
+          <details class="reveal" name="faq">
+            <summary>Is it a fair launch?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">Yes. $NRN launches on pump.fun with no presale and no team allocation. Everyone buys from the same open bonding curve.</p>
+          </details>
+          <details class="reveal" name="faq">
+            <summary>Are there taxes?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">No. $NRN has zero buy and sell tax. The only fees are pump.fun's standard trading fees.</p>
+          </details>
+          <details class="reveal" name="faq">
+            <summary>How do I buy $NRN?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">Get a Solana wallet, fund it with SOL, then swap for $NRN on pump.fun using the contract address shown on this site.</p>
+          </details>
+          <details class="reveal" name="faq">
+            <summary>How do I know it's the real contract?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">Only trust the address on this site and in the pinned posts on our X and Telegram. Copycat tokens with the same name are common, so check before you buy.</p>
+          </details>
+          <details class="reveal" name="faq">
+            <summary>Is this an investment?<span class="faq__icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+            <p class="faq__a">No. $NRN has no intrinsic value and no promise of returns. Only spend what you're happy to lose, and always do your own research.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container band__inner reveal">
+        <h2 class="band__title glow">Think for yourself.</h2>
+        <p class="band__text"><span class="when-live">Grab a wallet, swap some SOL, and join the swarm.</span><span class="when-pre">Launching soon on pump.fun. Follow along so you get the contract first.</span></p>
+        <div class="band__ctas">
+          <a class="btn btn--buy" data-link-live="buy" data-link-pre="x" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="when-live">Buy $NRN</span><span class="when-pre">Follow on X</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" data-link-live="x" data-link-pre="telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer"><span class="when-live">Follow on X</span><span class="when-pre">Join Telegram</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#top" class="footer__brand" aria-label="NEURON, back to top">
+          <img src="assets/img/logo.webp" alt="" width="36" height="36" loading="lazy">
+          <span>
+            <span class="footer__name">NEURON</span>
+            <span class="footer__meta mono">$NRN on Solana</span>
+          </span>
+        </a>
+        <div class="footer__links">
+          <a class="social" data-link="x" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="NEURON on X"><svg aria-hidden="true"><use href="#i-x"/></svg></a>
+          <a class="social" data-link="telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="NEURON on Telegram"><svg aria-hidden="true"><use href="#i-tg"/></svg></a>
+          <a class="btn btn--buy btn--sm" data-link-live="buy" data-link-pre="x" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="when-live">Buy $NRN</span><span class="when-pre">Follow on X</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <p class="disclaimer">$NRN is a memecoin with no intrinsic value and no expectation of financial return. It exists for entertainment and community purposes only. Nothing on this site is financial advice. Crypto is highly volatile and you could lose everything you put in. Always do your own research.</p>
+      <p class="copyright">&copy; <span id="year">2026</span> NEURON. Not affiliated with pump.fun.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
